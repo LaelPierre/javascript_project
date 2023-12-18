@@ -365,9 +365,36 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 360px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+  }
+}
 
 /* For medium devices */
+@media screen and (min-width) {
+  .home-container {
+    grid-template-columns: 360px;
+    justify-content: center;
+    row-gap: 3rem;
+  }
+
+  .home-img {
+    transform: scale(1.1);
+  }
+}
 
 /* For lower devices */
+@media screen and (max-width: 968px) and (max-width: 720px) {
+  .home {
+    height: initial;
+  }
+}
 
 /* For large devices */
